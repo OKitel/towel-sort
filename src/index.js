@@ -1,9 +1,9 @@
 module.exports = function towelSort (matrix) {
-  let arr = [];
+  const arr = [];
   if (typeof(matrix) == 'undefined') {
     return arr;
   }
-  let l = matrix.length;
+  const l = matrix.length;
   
   for (let i = 0; i < l; i++){
     if (i % 2 != 0) {
@@ -11,7 +11,7 @@ module.exports = function towelSort (matrix) {
     }
   }  
   for (let i = 0; i < l; i++){
-    for (n = 0; n < matrix[i].length; n++) {    
+    for (let n = 0; n < matrix[i].length; n++) {    
       arr.push(matrix[i][n]);    
    }
   }
